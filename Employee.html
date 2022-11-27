@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee payroll form</title>
+        <link rel="stylesheet" href="employee.css">
+    </head>
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="logo.png" alt="">
+                <div>
+                    <span class="emp-text">EMPLOYEE</span><br>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="form-content">
+            <form class="form" action="#" onsubmit="save();return false">
+            <div class="form-head">
+                Employee Payroll form
+            </div>
+            <div class="row-content">
+                <label class="label text" form="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name...">
+            </div>
+
+            <div class="row-content">
+                <label class="label text" form="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile" 
+                        value="image1.png" required>
+                        <img class="profile" id="image1" src="image1.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile2" name="profile" 
+                        value="image2.png" required>
+                        <img class="profile" id="image2" src="image2.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile3" name="profile" 
+                        value="image3.png" required>
+                        <img class="profile" id="image3" src="image3.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile4" name="profile" 
+                        value="image4.png" required>
+                        <img class="profile" id="image4" src="image4.jpg">
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="row-content">
+                <label class="label text" form="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" form="department">Department</label>
+                <div>
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
+                    <label class="text" for="finance">Finance</label>
+                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <label class="text" for="engineer">Engineer</label>
+                    <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
+                    <label class="text" for="others">Others</label>
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" form="salary">Choose your salary:</label>
+                <input class="input"  type="range" name="salary" id="salary" min="30000"
+                max="500000" step="100" value="40000">
+                <output class="salary-output text" for="salary">40000</output>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" form="startDate">Start Date:</label>
+                <div>
+                    <select id="day" name="Day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select id="month" name="Month">
+                        <option value="Jan">January</option>
+                        <option value="Feb">Febuary</option>
+                        <option value="Mar">Mrach</option>
+                    </select>
+                    <select id="year" name="Year">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" form="notes">Notes:</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
+            </div>
+            <div class="buttonParent">
+                <a href="payroll.html" class="resetButton button canacelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+         
+                </div>
+
+            </div>
+
+
+
+
+            
+            </form>
+
+        </div>
+    </body>
+</html>
